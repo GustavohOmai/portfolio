@@ -1,9 +1,152 @@
 *{
-    border: 0;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body{
     font-family: 'Montserrat', sans-serif;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    padding: 2rem;
+}
+
+.align-center{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a{
+    color: #fff;
+    font-size: 1.2rem;
+    text-decoration: none;
+    margin-left: 1.4rem;
+}
+ul, li{
+    list-style: none;
+    display: flex;
+}
+
+
+
+.logo img{
+    width: 12rem;
+}
+
+.bg-gradient{
+    background: rgb(124,23,151);
+    background: linear-gradient(0deg, rgba(124,23,151,1) 0%, rgba(25,0,66,1) 100%);
+    height: 100vh;
+}
+
+.container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  #checkbox-menu{
+    position: absolute;
+    opacity: 0;
+  }
+  
+  label{
+    cursor: pointer;
+    position: relative;
+    display: block;
+    height: 22px;
+    width: 30px;
+  }
+  
+  label span{
+    position: absolute;
+    display: block;
+    height: .1rem;
+    width: 100%;
+    border-radius: 30px;
+    background: #fff;
+    transition: 0.25s ease-in-out;
+  }
+  
+  label span:nth-child(1){
+    top: 0;
+  }
+  
+  label span:nth-child(2){
+    top: 8px;
+  }
+  
+  label span:nth-child(3){
+    top: 16px;
+  }
+  
+  #checkbox-menu:checked + label span:nth-child(1){
+    transform: rotate(-45deg);
+    top: 8px;
+  }
+  
+  #checkbox-menu:checked + label span:nth-child(2){
+    opacity: 0;
+  }
+  
+  #checkbox-menu:checked + label span:nth-child(3){
+    transform: rotate(45deg);
+    top:8px;
+  }
+
+  .display-none{
+    display: none;
+  }
+
+@media (max-width: 768px)
+{
+  .nav-lg
+   {
+    display: none;
+   }
+
+   ul, li{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    }
+    nav{
+      position: fixed;
+      right: 0px;
+      margin-right: 1rem;
+      display: flex;
+      justify-content: end;
+      width: 100vw;
+    }
+
+    nav a{
+        margin-bottom: 1rem;
+    }
+
+    .nav-mob{
+      margin-top: 2rem;
+      margin-right: 3rem;
+      margin-bottom: 2rem;
+    }
+}
+
+@media (min-width: 768px)
+{
+  .menu
+   {
+    display: none;
+   }
 }

@@ -1,23 +1,60 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="Images/favicon-go.png" type="image/x-icon">
     <link rel="stylesheet" href="./CSS/style.css">
     <title>Portfólio | Gustavo Omai</title>
 </head>
 
-<body style="background-color:#313131 ;">
+<body>
 
     <header>
+        <div class="align-center">
+            <div class="logo">
+                <img src="Images/logo.png" alt="">
+            </div>
+            <nav class="nav-lg">
+                <ul>
+                    <li><a href="">Sobre</a></li>
+                    <li><a href="">Conhecimentos</a></li>
+                    <li><a href="">Projetos</a></li>
+                    <li><a href="">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
 
-        
+        <div class="menu">
+            <div class="container nav-mob">
+                <input type="checkbox" id="checkbox-menu" onclick="hamburguer()">
 
+                <label for="checkbox-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+
+            <nav id="nav-mob" class="display-none">
+                <ul>
+                    <li><a href="">Sobre</a></li>
+                    <li><a href="">Conhecimentos</a></li>
+                    <li><a href="">Projetos</a></li>
+                    <li><a href="">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-
+    <main>
+        <div class="bg-gradient">
+        </div>
+    </main>
+    <script src="./JS/script.js"></script>
 </body>
+
 </html>
