@@ -19,6 +19,9 @@ header{
     width: 100%;
     padding: 2rem;
 }
+a{
+  text-decoration: none;
+}
 .align-center{
     display: flex;
     width: 100%;
@@ -350,7 +353,7 @@ ul, li{
   width: 100%;
   border-radius: 30px;
   background: linear-gradient(-90deg, rgba(124,23,151,1) 0%, rgba(25,0,66,1) 100%);
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .w-80{
@@ -382,6 +385,7 @@ ul, li{
 
 .tecnologia img{
   width: 65%;
+  transition: .5s;
 }
 
 .tech{
@@ -415,4 +419,109 @@ ul, li{
 
 .java{
   width: 50%!important;
+}
+
+.tecnologias-slick{
+  margin-bottom: 4rem;
+  margin-top: 2rem;
+}
+
+.tecnologia img:hover{
+  transform: scale(1.1);
+}
+
+.destaque-title{
+  font-size: 2rem;
+  color: #fff;
+  font-weight: normal;
+  margin-bottom: 2rem;
+}
+
+.projeto{
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  border-radius: 30px;
+  border: 1px solid #fff;
+}
+
+.projeto h3{
+  color: #fff;
+  font-weight: normal;
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.projeto-img{
+  border-radius: 30px 30px 0px 0px;
+}
+
+.projeto-content{
+  padding: 0 1rem;
+}
+
+.tech-projeto img{
+  height: 40px;
+}
+
+.tech-projeto {
+  display: flex;
+}
+
+.projeto-content p{
+  color: #fff;
+  font-size: 1rem;
+  font-weight: lighter;
+  margin: 1rem 0;
+}
+
+.d-flex-start{
+  display: flex;
+  justify-content: start;
+}
+
+.tech-card{
+  margin-right: 2rem;
+  transition: .5s;
+}
+.tech-card:hover{
+  transform: scale(1.1);
+}
+
+.m-10{
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+.bg-blue{
+  background: #130031;
+}
+
+.d-between{
+  display: flex;
+  justify-content: space-between;
+}
+
+.d-between a img{
+  width: 40px;
+}
+
+.w-70{
+  width: 70%;
+}
+
+
+@media (max-width: 768px){
+  .tech-card:hover{
+    transform: scale(1);
+  }
+
+  .d-between a img{
+    width: 30px;
+  }
+  
+}
+
+.m-contato{
+  padding: 3rem 0 4rem 0;
 }
