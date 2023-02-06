@@ -39,14 +39,22 @@ $(document).ready(function () {
   $('.projetos-destaque').slick({
     mobileFirst: true,
     responsive: [{
-      breakpoint: 480,
+      breakpoint: 1000,
       settings: "unslick"
-    }]
+    },
+    {
+      breakpoint: 900,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 3,
+        infinite: true,
+      }
+    },]
   });
 
 
 
-  $('.projetos-todos').slick({
+  $('#projetos-todos').slick({
     dots: false,
     infinite: true,
     slidesToShow: 4,
@@ -57,14 +65,14 @@ $(document).ready(function () {
           slidesToShow: 3,
           slidesToScroll: 3,
           infinite: true,
-          dots: true
         }
       },
       {
         breakpoint: 600,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
+          slidesToScroll: 1,
+          infinite: true,
         }
       },
     ]
