@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="Images/favicon-go.png" type="image/x-icon">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <title>Portfólio | Gustavo Omai</title>
+</head>
+
+<body>
+
+    <header class="p-fixed bg-dark">
+        <div class="align-center">
+            <div class="logo">
+                <img src="Images/logo.png" alt="">
+            </div>
+            <nav class="nav-lg">
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="">Conhecimentos</a></li>
+                    <li><a href="">Projetos</a></li>
+                    <li><a href="">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="menu">
+            <div class="container nav-mob">
+                <input type="checkbox" id="checkbox-menu" onclick="hamburguer()">
+
+                <label for="checkbox-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+
+            <nav id="nav-mob" class="display-none">
+                <ul>
+                    <li><a href="">Sobre</a></li>
+                    <li><a href="">Conhecimentos</a></li>
+                    <li><a href="">Projetos</a></li>
+                    <li><a href="">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="#sobre">
+        <div class="bg-dark">
+            <div class="d-flex-about vh-100">
+
+                <div class="text-main">
+                    <h1>Olá, meu nome é <br> <span class="bold name">Gustavo Omai</span> </h1>
+                    <div class="p-main">
+                        <p>Sou um jovem de 19 anos cursando atualmente Sistemas de Informação e formado em eletrônica
+                            com muito interesse em aprender. Atualmente trabalho em uma empresa de ecommerce como
+                            Estagiário em Desenvolvimento Front-End e ja desenvolvi projetos utlizando Cloud IA e IoT
+                        </p>
+                    </div>
+                </div>
+
+                <div class="desk img-main ">
+                    <img src="Images/foto-perfil.png" alt="">
+                </div>
+
+                <div class="img-main-mobile mobile">
+                    <img src="Images/gustavo-img.png" alt="">
+                </div>
+
+                <div class="p-absolute m-n-triangle desk">
+                    <div class="background-triangle vh-100">
+                        <img src="Images/Rectangle 140.png" alt="" class="h-100">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <section class="bg-dark">
+        <div class="d-flex-frase">
+            <div class="w-50 d-flex">
+                <img src="Images/pc-img.png" alt="" class="z-index-999">
+            </div>
+        </div>
+    </section>
+
+    <script src="./JS/script.js"></script>
+</body>
+
+</html>
