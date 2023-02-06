@@ -10,6 +10,11 @@
     <link rel="shortcut icon" href="Images/favicon-go.png" type="image/x-icon">
     <link rel="stylesheet" href="./CSS/style.css">
     <title>Portfólio | Gustavo Omai</title>
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
 </head>
 
 <body>
@@ -22,7 +27,7 @@
             <nav class="nav-lg">
                 <ul>
                     <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="">Conhecimentos</a></li>
+                    <li><a href="#tecnologias">Conhecimentos</a></li>
                     <li><a href="">Projetos</a></li>
                     <li><a href="">Contato</a></li>
                 </ul>
@@ -51,7 +56,7 @@
         </div>
     </header>
 
-    <main id="#sobre">
+    <main id="sobre">
         <div class="bg-dark">
             <div class="d-flex-about vh-100">
 
@@ -81,21 +86,97 @@
             </div>
         </div>
     </main>
-    
+
     <section class="bg-dark">
-            <div class="d-flex-frase">
-                <div class="w-50 d-flex">
-                    <img src="Images/pc-img.png" alt="" class="z-index-999">
-                </div>
-    
-                <div class="w-40 d-flex-column">
-                    <h2 class="frase-filosofica">“Há mais pessoas que <span class="pink">desistem</span>, do que pessoas que <span class="purple">fracassam</span>”</h2>
-                    <p class="filosofo">-Henry Ford</p>
-                </div>
+        <div class="d-flex-frase">
+            <div class="w-50 d-flex">
+                <img src="Images/pc-img.png" alt="" class="z-index-99">
             </div>
+
+            <div class="w-40 d-flex-column">
+                <h2 class="frase-filosofica">“Há mais pessoas que <span class="pink">desistem</span>, do que pessoas que
+                    <span class="purple">fracassam</span>”</h2>
+                <p class="filosofo">-Henry Ford</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-gradient" id="tecnologias">
+        <div class="d-flex">
+            <div class="d-flex-column">
+                <h2 class="tecnologias-title">Tecnologias</h2>
+                <div class="border-title"></div>
+            </div>
+        </div>
+        <div class="d-flex">
+            <div class="w-80 d-flex wrap tecnologias-slick">
+                <div class="tech">
+                    <div class="tecnologia bg-dark">
+                        <h3>HTML</h3>
+                        <img src="Images/vscode-icons_file-type-html.png" alt="">
+                    </div>
+                    <div class="border-title-tecnologia"></div>
+                </div>
+                <div class="tech">
+                    <div class="tecnologia bg-dark">
+                        <h3>CSS</h3>
+                        <img src="Images/vscode-icons_file-type-css.png" alt="">
+                    </div>
+                    <div class="border-title-tecnologia"></div>
+                </div>
+                <div class="tech">
+                    <div class="tecnologia bg-dark">
+                        <h3>JS</h3>
+                        <img src="Images/logos_javascript.png" alt="" >
+                    </div>
+                    <div class="border-title-tecnologia"></div>
+                </div>
+                <div class="tech">
+                    <div class="tecnologia bg-dark">
+                        <h3>Bootstrap</h3>
+                        <img src="Images/bootstrap 2.png" alt="">
+                    </div>
+                    <div class="border-title-tecnologia"></div>
+                </div> 
+                <div class="tech">
+                    <div class="tecnologia bg-dark">
+                        <h3>VTEX</h3>
+                        <img src="Images/simple-icons_vtex.png" alt="">
+                    </div>
+                    <div class="border-title-tecnologia"></div>
+                </div>
+                <div class="tech">
+                    <div class="tecnologia bg-dark">
+                        <h3>Java</h3>
+                        <img src="Images/logos_java.png" alt="" class="java">
+                    </div>
+                    <div class="border-title-tecnologia"></div>
+                </div>
+                <div class="tech">
+                    <div class="tecnologia bg-dark">
+                        <h3>GIT</h3>
+                        <img src="Images/git-alt 2.png" alt="">
+                    </div>
+                    <div class="border-title-tecnologia"></div>
+                </div>
+                <div class="tech">
+                    <div class="tecnologia bg-dark">
+                        <h3>GO</h3>
+                        <img src="Images/vscode-icons_file-type-go-gopher.png" alt="">
+                    </div>
+                    <div class="border-title-tecnologia"></div>
+                </div>
+                
+
+                    
+            </div>
+        </div>
+
+
     </section>
 
     <script src="./JS/script.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </body>
 
 </html>
