@@ -155,6 +155,7 @@ ul, li{
 {
   .text-main{
     justify-content: flex-end;
+    margin-top: 12rem;
   }
   .nav-lg
    {
@@ -339,6 +340,10 @@ ul, li{
     margin-bottom: 2rem;
     font-size: 1rem;
     color: #fff;
+  }
+
+  .z-index-99{
+    position: block;
   }
 }
 
