@@ -252,7 +252,7 @@ ul, li{
 }
 
 .p-fixed{
-  position: fixed;
+  position: fixed!important;
 }
 
 .z-index-999{
@@ -268,6 +268,7 @@ ul, li{
 
 .d-flex-frase{
   display: flex;
+  align-items: center;
 }
 
 .w-50{
@@ -276,4 +277,59 @@ ul, li{
 
 .d-flex-frase .w-50 img{
   width: 80%;
+}
+
+.frase-filosofica{
+  font-size: 3.5rem;
+  color: #fff;
+}
+
+.pink{
+  color: #EA00B6;
+}
+
+.purple{
+  color: #B800EA;
+}
+
+.w-40{
+  width: 40%;
+}
+
+.d-flex-column{
+  display: flex;
+  flex-direction: column;
+}
+.filosofo{
+  margin-top: .5rem;
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+@media (max-width: 768px){
+  .d-flex-frase{
+    flex-direction: column-reverse;
+    padding-top: 3rem;
+  }
+
+  .d-flex-frase .w-50{
+    width: 100%;
+  }
+
+  .d-flex-frase .w-40{
+    width: 80%;
+    text-align: center;
+  }
+
+  .frase-filosofica{
+    font-size: 2rem;
+    color: #fff;
+  }
+
+  .filosofo{
+    margin-top: .5rem;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    color: #fff;
+  }
 }
