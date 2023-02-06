@@ -333,7 +333,7 @@ ul, li{
   .frase-filosofica{
     font-size: 2rem;
     color: #fff;
-    margin-top: 15rem;
+    margin-top: 10rem;
   }
 
   .filosofo{
@@ -490,9 +490,7 @@ ul, li{
   margin-right: 2rem;
   transition: .5s;
 }
-.tech-card:hover{
-  transform: scale(1.1);
-}
+
 
 .m-10{
   margin-top: 2rem;
@@ -518,9 +516,6 @@ ul, li{
 
 
 @media (max-width: 768px){
-  .tech-card:hover{
-    transform: scale(1);
-  }
 
   .d-between a img{
     width: 30px;
