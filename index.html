@@ -97,12 +97,14 @@
                 <img src="Images/pc-img.png" alt="" class="z-index-99 thumbnail">
             </div>
 
-            <div class="w-40 d-flex-column " data-aos="fade-left" data-aos-duration="2000">
+            <div class="w-40 d-flex-column" data-aos="fade-left" data-aos-duration="2000">
                 <h2 class="frase-filosofica">“Vamos inventar o <span class="pink">amanhã</span> e parar de nos preocupar
                     com o
                     <span class="purple">passado</span>”</h2>
                 <p class="filosofo" id="tecnologias">-Steve Jobs</p>
             </div>
+
+
         </div>
     </section>
 
@@ -129,7 +131,7 @@
                     </div>
                     <div class="border-title-tecnologia"></div>
                 </div>
-                <div clas s="tech">
+                <div class="tech">
                     <div class="tecnologia bg-dark">
                         <h3>JS</h3>
                         <img src="Images/logos_javascript.png" alt="">
@@ -349,7 +351,20 @@
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init();
+        AOS.init({
+            disable: false,
+            // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+            offset: 400, // offset (in px) from the original trigger point
+        });
+
+        if ($(window).width() <= 960) {
+            AOS.init({
+            disable: true,
+            
+        });
+        }else{
+            
+        } AOS.init();
     </script>
 
     <script>

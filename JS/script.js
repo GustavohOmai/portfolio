@@ -52,7 +52,7 @@ $(document).ready(function () {
         }
       },
       {
-        breakpoint: 800,
+        breakpoint: 00,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -99,7 +99,7 @@ $(document).ready(function () {
 
 var image = document.getElementsByClassName('thumbnail');
 new simpleParallax(image, {
-	scale: 1.5,
+	scale: 1.8,
   overflow: true
 });
 

@@ -10,7 +10,6 @@ body{
     font-family: 'Montserrat', sans-serif;
     font-size: 62.5%;
     scroll-behavior: smooth;
-    overflow-x: hidden;
 }
 header{
     display: flex;
@@ -153,6 +152,8 @@ ul, li{
   .img-main-mobile{
     width: 80%;
   }
+
+  
 @media (max-width: 768px)
 {
   .text-main{
@@ -209,9 +210,6 @@ ul, li{
     .d-flex-about{
       flex-direction: column;
     }
-
-    
-
 
 }
 @media (max-width: 1000px){
