@@ -2,10 +2,8 @@ let checkbox = document.getElementById('checkbox-menu')
 let menu = document.getElementById('nav-mob')
 
 function hamburguer() {
-  console.log("Foi caralho");
   if (checkbox.checked) {
     menu.classList.remove('display-none')
-    console.log("Foi caralho");
   } else {
     menu.classList.add('display-none')
   }
@@ -38,7 +36,7 @@ $(document).ready(function () {
     slidesToShow: 4,
     speed: 300,
     responsive: [{
-        breakpoint: 1400,
+        breakpoint: 1550,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 3,
@@ -46,7 +44,15 @@ $(document).ready(function () {
         }
       },
       {
-        breakpoint: 600,
+        breakpoint: 1050,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: true,
+        }
+      },
+      {
+        breakpoint: 800,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -60,7 +66,21 @@ $(document).ready(function () {
     slidesToShow: 5,
     responsive: [
       {
-        breakpoint: 800,
+        breakpoint: 1050,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 4
+        }
+      },
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3
+        }
+      },
+      {
+        breakpoint: 600,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2
@@ -75,4 +95,18 @@ $(document).ready(function () {
     $('#projetos-destaque').slick('unslick');
   }
 
+});
+
+var image = document.getElementsByClassName('thumbnail');
+new simpleParallax(image, {
+	scale: 1.5,
+  overflow: true
+});
+
+
+var typed = new Typed(".auto-type", {
+  strings: ['Olá, meu nome é <br> <span class="bold name">Gustavo Omai</span>'],
+  typeSpeed: 100,
+  backSpeed:80,
+  loop: false
 });

@@ -10,11 +10,11 @@
     <link rel="shortcut icon" href="Images/favicon-go.png" type="image/x-icon">
     <link rel="stylesheet" href="./CSS/style.css">
     <title>Portfólio | Gustavo Omai</title>
-
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-
 </head>
 
 <body>
@@ -22,14 +22,16 @@
     <header class="p-fixed bg-dark z-index-999">
         <div class="align-center">
             <div class="logo">
-                <img src="Images/logo.png" alt="">
+                <a href="#sobre">
+                    <img src="Images/logo.png" alt="">
+                </a>
             </div>
             <nav class="nav-lg">
                 <ul>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#tecnologias">Conhecimentos</a></li>
-                    <li><a href="#projetos">Projetos</a></li>
-                    <li><a href="#contato">Contato</a></li>
+                    <li><span class="navanimation"><a href="#sobre">Sobre</a></li> </span>
+                    <li><span class="navanimation"><a href="#tecnologias">Conhecimentos</a></li></span>
+                    <li><span class="navanimation"><a href="#projetos">Projetos</a></li></span>
+                    <li><span class="navanimation"><a href="#contato">Contato</a></li></span>
                 </ul>
             </nav>
         </div>
@@ -59,10 +61,12 @@
     <main id="sobre">
         <div class="bg-dark">
             <div class="d-flex-about vh-100">
-
+                <!-- Olá, meu nome é <br> <span class="bold name">Gustavo Omai</span>  -->
                 <div class="text-main">
-                    <h1>Olá, meu nome é <br> <span class="bold name">Gustavo Omai</span> </h1>
-                    <div class="p-main">
+                    <h1><span class="auto-type"></span></h1>
+                    <span></span>
+
+                    <div class="p-main" data-aos="fade-up" data-aos-duration="2000">
                         <p>Sou um jovem de 19 anos cursando atualmente Sistemas de Informação e formado em eletrônica
                             com muito interesse em aprender. Atualmente trabalho em uma empresa de ecommerce como
                             Estagiário em Desenvolvimento Front-End e ja desenvolvi projetos utlizando Cloud IA e IoT
@@ -90,18 +94,19 @@
     <section class="bg-dark">
         <div class="d-flex-frase">
             <div class="w-50 d-flex">
-                <img src="Images/pc-img.png" alt="" class="z-index-99">
+                <img src="Images/pc-img.png" alt="" class="z-index-99 thumbnail">
             </div>
 
-            <div class="w-40 d-flex-column " >
-                <h2 class="frase-filosofica">“Vamos inventar o <span class="pink">amanhã</span> e parar de nos preocupar com o  
+            <div class="w-40 d-flex-column " data-aos="fade-left" data-aos-duration="2000">
+                <h2 class="frase-filosofica">“Vamos inventar o <span class="pink">amanhã</span> e parar de nos preocupar
+                    com o
                     <span class="purple">passado</span>”</h2>
                 <p class="filosofo" id="tecnologias">-Steve Jobs</p>
             </div>
         </div>
     </section>
 
-    <section class="bg-gradient" >
+    <section class="bg-gradient">
         <div class="d-flex">
             <div class="d-flex-column">
                 <h2 class="tecnologias-title">Tecnologias</h2>
@@ -124,10 +129,10 @@
                     </div>
                     <div class="border-title-tecnologia"></div>
                 </div>
-                <div clas   s="tech">
+                <div clas s="tech">
                     <div class="tecnologia bg-dark">
                         <h3>JS</h3>
-                        <img src="Images/logos_javascript.png" alt="" >
+                        <img src="Images/logos_javascript.png" alt="">
                     </div>
                     <div class="border-title-tecnologia"></div>
                 </div>
@@ -137,7 +142,7 @@
                         <img src="Images/bootstrap 2.png" alt="">
                     </div>
                     <div class="border-title-tecnologia"></div>
-                </div> 
+                </div>
                 <div class="tech">
                     <div class="tecnologia bg-dark">
                         <h3>VTEX</h3>
@@ -166,16 +171,11 @@
                     </div>
                     <div class="border-title-tecnologia" id="projetos"></div>
                 </div>
-                
-
-                    
             </div>
         </div>
-
-
     </section>
 
-    <section class="bg-dark" >
+    <section class="bg-dark">
         <div class="d-flex">
             <div class="d-flex-column">
                 <h2 class="tecnologias-title">Projetos</h2>
@@ -191,14 +191,18 @@
                         <div class="tech-card">
                             <a href="#">
                                 <div class="projeto">
-                                    <img src="Images/pexels-pixabay-270360 10.png" alt="" class="projeto-img">
+                                    <img src="Images/daynight.png" alt="" class="projeto-img">
                                     <div class="projeto-content">
                                         <h3>Day &amp; Night</h3>
                                         <div class="tech-projeto">
                                             <img src="Images/vscode-icons_file-type-html.png" alt="">
                                             <img src="Images/vscode-icons_file-type-css.png" alt="">
+                                            <img src="Images/logos_javascript.png" alt="">
+                                            <img src="Images/bootstrap 2.png" alt="">
+                                            <img src="Images/jquery.png" alt="">
                                         </div>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas molestias nesciunt</p>
+                                        <p>Um site onde é possível trocar o tema entre escuro e claro, projeto feito
+                                            para treinar DOM, uso de biblioteca para carrossel</p>
                                     </div>
                                 </div>
                             </a>
@@ -206,67 +210,43 @@
                         <div class="tech-card">
                             <a href="#">
                                 <div class="projeto">
-                                    <img src="Images/pexels-pixabay-270360 10.png" alt="" class="projeto-img">
+                                    <img src="Images/buddyvision.png" alt="" class="projeto-img">
                                     <div class="projeto-content">
-                                        <h3>Projeto 2</h3>
+                                        <h3>BuddyVision</h3>
                                         <div class="tech-projeto">
                                             <img src="Images/vscode-icons_file-type-html.png" alt="">
                                             <img src="Images/vscode-icons_file-type-css.png" alt="">
-                                            <img src="Images/logos_javascript.png" alt="">
-                                        </div>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas molestias nesciunt</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="tech-card">
-                            <a href="#">
-                                <div class="projeto">
-                                    <img src="Images/pexels-pixabay-270360 10.png" alt="" class="projeto-img">
-                                    <div class="projeto-content">
-                                        <h3>Projeto 3</h3>
-                                        <div class="tech-projeto">
-                                            <img src="Images/vscode-icons_file-type-go-gopher.png" alt="">
                                             <img src="Images/logos_java.png" alt="">
+                                            <img src="Images/azure.png" alt="">
+                                            <img src="Images/arduino.png" alt="">
                                         </div>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas molestias nesciunt</p>
+                                        <p>Projeto de Iniciação Científica desenvolvido utilizando Cloud Computing,
+                                            Inteligência Artificial e IoT para melhorar o principal serviço de
+                                            emergências do País</p>
                                     </div>
                                 </div>
                             </a>
                         </div>
+
                     </div>
                 </div>
 
                 <div class="d-flex-column m-10">
-                    <h2 class="destaque-title">Todos</h2>
+                    <h2 class="destaque-title">Confira outros projetos</h2>
                     <div class="projetos-todos d-flex-start" id="projetos-todos">
                         <div class="tech-card">
                             <a href="#">
                                 <div class="projeto">
-                                    <img src="Images/pexels-pixabay-270360 10.png" alt="" class="projeto-img">
+                                    <img src="Images/disney.png" alt="" class="projeto-img">
                                     <div class="projeto-content">
-                                        <h3>Day &amp; Night</h3>
-                                        <div class="tech-projeto">
-                                            <img src="Images/vscode-icons_file-type-html.png" alt="">
-                                            <img src="Images/vscode-icons_file-type-css.png" alt="">
-                                        </div>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas molestias nesciunt</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="tech-card">
-                            <a href="#">
-                                <div class="projeto">
-                                    <img src="Images/pexels-pixabay-270360 10.png" alt="" class="projeto-img">
-                                    <div class="projeto-content">
-                                        <h3>Projeto 2</h3>
+                                        <h3>Disney Clone</h3>
                                         <div class="tech-projeto">
                                             <img src="Images/vscode-icons_file-type-html.png" alt="">
                                             <img src="Images/vscode-icons_file-type-css.png" alt="">
                                             <img src="Images/logos_javascript.png" alt="">
                                         </div>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas molestias nesciunt</p>
+                                        <p>Projeto de um clone do site Disney+ onde foi possível estudar tecnologias
+                                            como HTML, CSS, JS e também meu primeiro contato com a biblioteca Slick</p>
                                     </div>
                                 </div>
                             </a>
@@ -274,14 +254,17 @@
                         <div class="tech-card">
                             <a href="#">
                                 <div class="projeto">
-                                    <img src="Images/pexels-pixabay-270360 10.png" alt="" class="projeto-img">
+                                    <img src="Images/game.png" alt="" class="projeto-img">
                                     <div class="projeto-content">
-                                        <h3>Projeto 3</h3>
+                                        <h3>Jogo Robocup</h3>
                                         <div class="tech-projeto">
-                                            <img src="Images/vscode-icons_file-type-go-gopher.png" alt="">
-                                            <img src="Images/logos_java.png" alt="">
+                                            <img src="Images/vscode-icons_file-type-html.png" alt="">
+                                            <img src="Images/vscode-icons_file-type-css.png" alt="">
+                                            <img src="Images/logos_javascript.png" alt="">
                                         </div>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas molestias nesciunt</p>
+                                        <p>Um jogo básico proposto pela FIAP onde quando os bonecos se tocam é gerado um
+                                            número aleátorio e subtraído da vida dos mesmos. Feito em HTML CSS e JS para
+                                            o aprendizado de Canva</p>
                                     </div>
                                 </div>
                             </a>
@@ -289,14 +272,14 @@
                         <div class="tech-card">
                             <a href="#">
                                 <div class="projeto">
-                                    <img src="Images/pexels-pixabay-270360 10.png" alt="" class="projeto-img">
+                                    <img src="Images/login.png" alt="" class="projeto-img">
                                     <div class="projeto-content">
-                                        <h3>Projeto 4</h3>
+                                        <h3>Login</h3>
                                         <div class="tech-projeto">
-                                            <img src="Images/vscode-icons_file-type-go-gopher.png" alt="">
-                                            <img src="Images/logos_java.png" alt="">
+                                            <img src="Images/vscode-icons_file-type-html.png" alt="">
+                                            <img src="Images/vscode-icons_file-type-css.png" alt="">
                                         </div>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas molestias nesciunt</p>
+                                        <p>Uma página simples para o estudo de HTML, CSS e o uso de formulário</p>
                                     </div>
                                 </div>
                             </a>
@@ -304,14 +287,16 @@
                         <div class="tech-card">
                             <a href="#">
                                 <div class="projeto">
-                                    <img src="Images/pexels-pixabay-270360 10.png" alt="" class="projeto-img">
+                                    <img src="Images/robocup.png" alt="" class="projeto-img">
                                     <div class="projeto-content">
-                                        <h3>Projeto 5</h3>
+                                        <h3>Robocup LP</h3>
                                         <div class="tech-projeto">
-                                            <img src="Images/vscode-icons_file-type-go-gopher.png" alt="">
-                                            <img src="Images/logos_java.png" alt="">
+                                            <img src="Images/vscode-icons_file-type-html.png" alt="">
+                                            <img src="Images/vscode-icons_file-type-css.png" alt="">
                                         </div>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas molestias nesciunt</p>
+                                        <p>Uma Landing page criada para o projeto da Robocup|FIAP onde desenhei o layout
+                                            e desenvolvi a página utilizando HTML e CSS
+                                        </p>
                                     </div>
                                 </div>
                             </a>
@@ -349,16 +334,29 @@
                         <img src="Images/instagram (1) 2.png" alt="">
                     </a>
 
-                    <a href="mailto:omai.gustavoh@gmail.com?&body=Olá, vim o seu Portfólio" >
+                    <a href="mailto:omai.gustavoh@gmail.com?&body=Olá, vim o seu Portfólio">
                         <img src="Images/envelope-regular 2.png" alt="">
                     </a>
                 </div>
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
+    <script src="simpleParallax.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
     <script src="JS/script.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script>
+
+    </script>
+
+
 </body>
 
 </html>
