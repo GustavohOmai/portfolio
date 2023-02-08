@@ -52,7 +52,7 @@ $(document).ready(function () {
         }
       },
       {
-        breakpoint: 00,
+        breakpoint: 800,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
